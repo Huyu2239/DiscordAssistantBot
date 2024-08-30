@@ -1,0 +1,5 @@
+services:
+  discordbot:
+    init: true
+    build:
+      dockerfile: Dockerfile
