@@ -1,13 +1,12 @@
+import asyncio
 import glob
+import io
 import logging
 import os
-from PIL import Image
-import io
+
 import discord
-
 import pdf2image
-import asyncio
-
+from PIL import Image
 
 BASE_COMMAND = 'libreoffice --headless --language=ja --infilter=",,64" --convert-to pdf:writer_pdf_Export --outdir . -env:UserInstallation=file://{user_profile} {office_file_path}'
 USER_PROFILE = os.getenv("HOME") + "/.config/libreoffice/4/user"
