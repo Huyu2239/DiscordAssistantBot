@@ -1,7 +1,8 @@
+import glob
+import logging
+
 import discord
 from discord.ext import commands
-import logging
-import glob
 
 from libs.constant import TOKEN
 
